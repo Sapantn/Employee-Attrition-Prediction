@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AttritionAI - AI-Powered Employee Retention</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/">
+                    <i class="fas fa-brain"></i>
+                    <span>AttritionAI</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/predict" class="nav-link btn-predict">Try Predictor</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Animated Icon -->
+    <div class="animated-icon">
+        <i class="fas fa-brain"></i>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Predict Employee Attrition with AI</h1>
+                <p>Leverage machine learning to identify at-risk employees and take proactive steps to retain your best talent</p>
+                <div class="hero-buttons">
+                    <a href="/predict" class="btn btn-primary">
+                        <i class="fas fa-magic"></i>
+                        Start Prediction
+                    </a>
+                    <a href="/about" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">75%+</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">23</span>
+                        <span class="stat-label">Features</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Instant</span>
+                        <span class="stat-label">Results</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-visual">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose AttritionAI?</h2>
+                <p>Advanced analytics to help you make data-driven decisions</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Advanced machine learning algorithms analyze multiple factors to predict attrition risk with high accuracy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Real-time Insights</h3>
+                    <p>Get instant predictions and actionable insights to help you retain valuable employees.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Data Security</h3>
+                    <p>Your employee data is protected with enterprise-grade security and privacy measures.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>HR Integration</h3>
+                    <p>Seamlessly integrate with your existing HR systems and workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple three-step process to get your predictions</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Input Employee Data</h3>
+                    <p>Enter basic employee information including age, job role, satisfaction levels, and more.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>AI Analysis</h3>
+                    <p>Our advanced AI model analyzes 23 comprehensive factors to assess attrition risk.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Get Results</h3>
+                    <p>Receive detailed predictions with risk levels and actionable recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Prediction Examples Section -->
+    <section class="examples-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>See AI Predictions in Action</h2>
+                <p>Real examples of how our AI analyzes employee data and provides retention recommendations</p>
+            </div>
+            
+            <div class="examples-grid">
+                <!-- High Risk Example -->
+                <div class="example-card high-risk">
+                    <div class="example-header">
+                        <div class="risk-indicator high">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>High Risk - Likely to Leave</span>
+                        </div>
+                        <div class="confidence-score">75% Confidence</div>
+                    </div>
+                    
+                    <div class="example-content">
+                        <h3>Sarah Johnson - Senior Developer</h3>
+                        <div class="employee-summary">
+                            <p><strong>Senior Developer</strong> • 3 years at company • Low satisfaction • Poor work-life balance</p>
+                        </div>
+                        
+                        <div class="key-factors">
+                            <h4>Key Risk Factors Identified:</h4>
+                            <ul>
+                                <li><i class="fas fa-times"></i> Low job satisfaction</li>
+                                <li><i class="fas fa-times"></i> Poor work-life balance</li>
+                                <li><i class="fas fa-times"></i> Regular overtime work</li>
+                                <li><i class="fas fa-times"></i> No recent promotions</li>
+                                <li><i class="fas fa-times"></i> Limited growth opportunities</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="quick-actions">
+                            <h4>Recommended Actions to Retain:</h4>
+                            <div class="action-tags">
+                                <span class="action-tag">Salary Review</span>
+                                <span class="action-tag">Flexible Hours</span>
+                                <span class="action-tag">Career Development</span>
+                                <span class="action-tag">Regular Check-ins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medium Risk Example -->
+                <div class="example-card medium-risk">
+                    <div class="example-header">
+                        <div class="risk-indicator medium">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Medium Risk - May Leave</span>
+                        </div>
+                        <div class="confidence-score">82% Confidence</div>
+                    </div>
+                    
+                    <div class="example-content">
+                        <h3>Michael Chen - Marketing Manager</h3>
+                        <div class="employee-summary">
+                            <p><strong>Marketing Manager</strong> • 2 years at company • Medium satisfaction • Limited leadership opportunities</p>
+                        </div>
+                        
+                        <div class="key-factors">
+                            <h4>Key Risk Factors Identified:</h4>
+                            <ul>
+                                <li><i class="fas fa-exclamation"></i> Limited leadership opportunities</li>
+                                <li><i class="fas fa-exclamation"></i> Moderate job satisfaction</li>
+                                <li><i class="fas fa-exclamation"></i> Fair work-life balance</li>
+                                <li><i class="fas fa-exclamation"></i> No remote work option</li>
+                                <li><i class="fas fa-exclamation"></i> Limited innovation projects</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="quick-actions">
+                            <h4>Recommended Actions to Retain:</h4>
+                            <div class="action-tags">
+                                <span class="action-tag">Leadership Training</span>
+                                <span class="action-tag">Remote Work</span>
+                                <span class="action-tag">Innovation Projects</span>
+                                <span class="action-tag">Recognition</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Low Risk Example -->
+                <div class="example-card low-risk">
+                    <div class="example-header">
+                        <div class="risk-indicator low">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Low Risk - Likely to Stay</span>
+                        </div>
+                        <div class="confidence-score">79% Confidence</div>
+                    </div>
+                    
+                    <div class="example-content">
+                        <h3>Emily Rodriguez - HR Specialist</h3>
+                        <div class="employee-summary">
+                            <p><strong>HR Specialist</strong> • 5 years at company • Very high satisfaction • Excellent work-life balance</p>
+                        </div>
+                        
+                        <div class="key-factors">
+                            <h4>Positive Retention Factors:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> High job satisfaction</li>
+                                <li><i class="fas fa-check"></i> Excellent work-life balance</li>
+                                <li><i class="fas fa-check"></i> Frequent recognition</li>
+                                <li><i class="fas fa-check"></i> Good compensation</li>
+                                <li><i class="fas fa-check"></i> Strong company tenure</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="quick-actions">
+                            <h4>Maintenance Strategies:</h4>
+                            <div class="action-tags">
+                                <span class="action-tag">Continue Recognition</span>
+                                <span class="action-tag">Growth Opportunities</span>
+                                <span class="action-tag">Flexible Work</span>
+                                <span class="action-tag">Benefits Enhancement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="examples-cta">
+                <p>Want to see predictions for your employees?</p>
+                <a href="/predict" class="btn btn-primary">
+                    <i class="fas fa-magic"></i>
+                    Try Prediction Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Predict Employee Attrition?</h2>
+                <p>Start using AI to retain your best talent today</p>
+                <a href="/predict" class="btn btn-primary btn-large">
+                    <i class="fas fa-rocket"></i>
+                    Get Started Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-brain"></i>
+                        <span>AttritionAI</span>
+                    </div>
+                    <p>AI-powered employee retention solutions for modern businesses.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/predict">Attrition Prediction</a></li>
+                        <li><a href="/services">HR Analytics</a></li>
+                        <li><a href="/services">Employee Insights</a></li>
+                        <li><a href="/services">Retention Strategies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@attritionai.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 AI Street, Tech City</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AttritionAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> 

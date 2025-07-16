@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - AttritionAI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/">
+                    <i class="fas fa-brain"></i>
+                    <span>AttritionAI</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services" class="nav-link active">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/predict" class="nav-link btn-predict">Try Predictor</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Services</h1>
+                <p>Comprehensive AI-powered solutions for employee retention and HR analytics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section class="services-main">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Service</h2>
+                <p>AI-powered employee attrition prediction to help you retain your best talent</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="fas fa-crystal-ball"></i>
+                    </div>
+                    <div class="service-badge">Main Service</div>
+                    <h3>AI Attrition Prediction</h3>
+                    <p>Our advanced machine learning model analyzes 23 key factors to predict employee attrition risk with over 75% accuracy. Get instant predictions and actionable insights to help you retain valuable employees.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Instant predictions</li>
+                        <li><i class="fas fa-check"></i> Risk level assessment</li>
+                        <li><i class="fas fa-check"></i> Actionable insights</li>
+                        <li><i class="fas fa-check"></i> Detailed reports</li>
+                        <li><i class="fas fa-check"></i> 23 comprehensive factors</li>
+                        <li><i class="fas fa-check"></i> Over 75% accuracy rate</li>
+                    </ul>
+                    <a href="/predict" class="btn btn-primary">Start Prediction</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple three-step process to get your predictions</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>Input Employee Data</h3>
+                    <p>Enter basic employee information including age, job role, satisfaction levels, and other relevant factors.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>AI Analysis</h3>
+                    <p>Our advanced AI model analyzes 23 comprehensive factors to assess attrition risk with over 75% accuracy.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>Get Results</h3>
+                    <p>Receive detailed predictions with risk levels and actionable recommendations to retain your employees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mock Data & Recommendations Section -->
+    <section class="mock-data-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI Prediction Examples & Recommendations</h2>
+                <p>See how our AI analyzes different scenarios and provides actionable retention strategies</p>
+            </div>
+            
+            <div class="scenarios-grid">
+                <!-- High Risk - Likely to Leave -->
+                <div class="scenario-card high-risk">
+                    <div class="scenario-header">
+                        <div class="risk-badge high">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>High Risk - Likely to Leave</span>
+                        </div>
+                        <div class="confidence">75% Confidence</div>
+                    </div>
+                    
+                    <div class="employee-profile">
+                        <h3>Sarah Johnson - Senior Developer</h3>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <span class="label">Age:</span>
+                                <span class="value">32</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Years at Company:</span>
+                                <span class="value">3</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Monthly Income:</span>
+                                <span class="value">$8,500</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Job Satisfaction:</span>
+                                <span class="value">Low</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Work-Life Balance:</span>
+                                <span class="value">Poor</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Overtime:</span>
+                                <span class="value">Yes</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="risk-factors">
+                        <h4>Key Risk Factors Identified:</h4>
+                        <ul>
+                            <li><i class="fas fa-times"></i> Low job satisfaction</li>
+                            <li><i class="fas fa-times"></i> Poor work-life balance</li>
+                            <li><i class="fas fa-times"></i> Regular overtime work</li>
+                            <li><i class="fas fa-times"></i> No recent promotions</li>
+                            <li><i class="fas fa-times"></i> Limited growth opportunities</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="recommendations">
+                        <h4>Recommended Actions to Retain:</h4>
+                        <div class="recommendation-list">
+                            <div class="recommendation-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <div>
+                                    <strong>Salary Review</strong>
+                                    <p>Conduct immediate salary review and consider market adjustment</p>
+                                </div>
+                            </div>
+                            <div class="recommendation-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Work-Life Balance</strong>
+                                    <p>Implement flexible working hours and reduce overtime expectations</p>
+                                </div>
+                            </div>
+                            <div class="recommendation-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <strong>Career Development</strong>
+                                    <p>Create clear promotion path and provide growth opportunities</p>
+                                </div>
+                            </div>
+                            <div class="recommendation-item">
+                                <i class="fas fa-comments"></i>
+                                <div>
+                                    <strong>Regular Check-ins</strong>
+                                    <p>Schedule weekly one-on-one meetings to address concerns</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medium Risk - May Leave -->
+                <div class="scenario-card medium-risk">
+                    <div class="scenario-header">
+                        <div class="risk-badge medium">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Medium Risk - May Leave</span>
+                        </div>
+                        <div class="confidence">82% Confidence</div>
+                    </div>
+                    
+                    <div class="employee-profile">
+                        <h3>Michael Chen - Marketing Manager</h3>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <span class="label">Age:</span>
+                                <span class="value">28</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Years at Company:</span>
+                                <span class="value">2</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Monthly Income:</span>
+                                <span class="value">$6,200</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Job Satisfaction:</span>
+                                <span class="value">Medium</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Work-Life Balance:</span>
+                                <span class="value">Fair</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Leadership Opportunities:</span>
+                                <span class="value">Limited</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="risk-factors">
+                        <h4>Key Risk Factors Identified:</h4>
+                        <ul>
+                            <li><i class="fas fa-exclamation"></i> Limited leadership opportunities</li>
+                            <li><i class="fas fa-exclamation"></i> Moderate job satisfaction</li>
+                            <li><i class="fas fa-exclamation"></i> Fair work-life balance</li>
+                            <li><i class="fas fa-exclamation"></i> No remote work option</li>
+                            <li><i class="fas fa-exclamation"></i> Limited innovation projects</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="recommendations">
+                        <h4>Recommended Actions to Retain:</h4>
+                        <div class="recommendation-list">
+                            <div class="recommendation-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>Leadership Training</strong>
+                                    <p>Provide leadership development programs and mentorship</p>
+                                </div>
+                            </div>
+                            <div class="recommendation-item">
+                                <i class="fas fa-home"></i>
+                                <div>
+                                    <strong>Remote Work Option</strong>
+                                    <p>Offer hybrid work arrangement to improve flexibility</p>
+                                </div>
+                            </div>
+                            <div class="recommendation-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <div>
+                                    <strong>Innovation Projects</strong>
+                                    <p>Assign to high-impact projects and creative initiatives</p>
+                                </div>
+                            </div>
+                            <div class="recommendation-item">
+                                <i class="fas fa-star"></i>
+                                <div>
+                                    <strong>Recognition Program</strong>
+                                    <p>Implement regular recognition and appreciation programs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Low Risk - Likely to Stay -->
+                <div class="scenario-card low-risk">
+                    <div class="scenario-header">
+                        <div class="risk-badge low">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Low Risk - Likely to Stay</span>
+                        </div>
+                        <div class="confidence">79% Confidence</div>
+                    </div>
+                    
+                    <div class="employee-profile">
+                        <h3>Emily Rodriguez - HR Specialist</h3>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <span class="label">Age:</span>
+                                <span class="value">35</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Years at Company:</span>
+                                <span class="value">5</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Monthly Income:</span>
+                                <span class="value">$7,800</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Job Satisfaction:</span>
+                                <span class="value">Very High</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Work-Life Balance:</span>
+                                <span class="value">Excellent</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Employee Recognition:</span>
+                                <span class="value">Frequent</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="risk-factors">
+                        <h4>Positive Retention Factors:</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> High job satisfaction</li>
+                            <li><i class="fas fa-check"></i> Excellent work-life balance</li>
+                            <li><i class="fas fa-check"></i> Frequent recognition</li>
+                            <li><i class="fas fa-check"></i> Good compensation</li>
+                            <li><i class="fas fa-check"></i> Strong company tenure</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="recommendations">
+                        <h4>Maintenance Strategies:</h4>
+                        <div class="recommendation-list">
+                            <div class="recommendation-item">
+                                <i class="fas fa-heart"></i>
+                                <div>
+                                    <strong>Continue Recognition</strong>
+                                    <p>Maintain current recognition programs and appreciation culture</p>
+                                </div>
+                            </div>
+                            <div class="recommendation-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <strong>Growth Opportunities</strong>
+                                    <p>Provide continued career development and advancement paths</p>
+                                </div>
+                            </div>
+                            <div class="recommendation-item">
+                                <i class="fas fa-balance-scale"></i>
+                                <div>
+                                    <strong>Work-Life Balance</strong>
+                                    <p>Continue supporting flexible work arrangements</p>
+                                </div>
+                            </div>
+                            <div class="recommendation-item">
+                                <i class="fas fa-gift"></i>
+                                <div>
+                                    <strong>Benefits Enhancement</strong>
+                                    <p>Consider additional benefits to maintain high satisfaction</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Predict Employee Attrition?</h2>
+                <p>Start using AI to retain your best talent today</p>
+                <div class="cta-buttons">
+                    <a href="/predict" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Start Prediction
+                    </a>
+                    <a href="/contact" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-brain"></i>
+                        <span>AttritionAI</span>
+                    </div>
+                    <p>AI-powered employee retention solutions for modern businesses.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/predict">Attrition Prediction</a></li>
+                        <li><a href="/services">HR Analytics</a></li>
+                        <li><a href="/services">Employee Insights</a></li>
+                        <li><a href="/services">Retention Strategies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@attritionai.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 AI Street, Tech City</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AttritionAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> 
